@@ -2,8 +2,9 @@
 {
     internal class Program
     {
-        // Crie um Programa Para Calcular o Volume de Uma Caixa Retangular
-        // VOLUME_DA_CAIXA = COMPRIMENTO * LARGURA * ALTURA
+        /* Crie um Programa Para Calcular o Volume de Uma Caixa Retangular
+           Fórmula: VOLUME_DA_CAIXA = COMPRIMENTO * LARGURA * ALTURA
+        */
         static void Main(string[] args)
         {
             #region Input de Dados
