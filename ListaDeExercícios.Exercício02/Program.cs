@@ -18,7 +18,8 @@
             double volume = Math.PI * Math.Pow(raio, 2) * altura;
 
             // Output
-
+            Console.WriteLine($"O Volume do Cilindro é de {volume}.");
+            Console.ReadLine();
         }
     }
 }
