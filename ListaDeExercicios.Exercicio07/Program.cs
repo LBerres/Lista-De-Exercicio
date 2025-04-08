@@ -39,7 +39,7 @@
                 primo = true;
             }
 
-            else if (numero % 2 == 0 || numero % 3 == 0)
+            else if ((numero / 2) * 2 == numero || (numero / 3) * 3 == numero)
             {
                 primo = false;
             }
