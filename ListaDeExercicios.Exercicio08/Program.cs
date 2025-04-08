@@ -9,63 +9,62 @@ namespace ListaDeExercicios.Exercicio08
     {
         static void Main(string[] args)
         {
-            #region Menu
-            Console.Clear();
-            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("                                         A Soma de A + B é Menor Que C ?                                                ");
-            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-            #endregion
+                #region Menu
+                Console.Clear();
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                Console.WriteLine("                                         A Soma de A + B é Menor Que C ?                                                ");
+                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                #endregion
 
-            #region Imput de Dados
-            Console.WriteLine("Digite o Número (A): ");
-            int numeroA = Convert.ToInt32(Console.ReadLine());
+                #region Imput de Dados
+                Console.WriteLine("Digite o Número (A): ");
+                int numeroA = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Digite o Número (B): ");
-            int numeroB = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Digite o Número (B): ");
+                int numeroB = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Digite o Número (C): ");
-            int numeroC = Convert.ToInt32(Console.ReadLine());
-            #endregion
+                Console.WriteLine("Digite o Número (C): ");
+                int numeroC = Convert.ToInt32(Console.ReadLine());
+                #endregion
 
-            #region Processamento
-            bool resultado = true;
+                #region Processamento
+                bool resultado = true;
 
-            while (true)
-            {
-     
-                if (numeroA + numeroB < numeroC)
+                while (true)
                 {
-                    resultado = true;
-                }
-                else
-                {
-                    resultado = false;
-                }
-                break;
-            }
-            #endregion
 
-            #region Saída de Dados
-            if (resultado == true)
-            {
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-                Console.WriteLine("");
-                Console.WriteLine($"                                         A Soma é Menor Que o Número C!                                                ");
-                Console.WriteLine("");
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-            }
-            else if (resultado == false)
-            {
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-                Console.WriteLine("");
-                Console.WriteLine($"                                       A Soma Não é Menor Que o Número C!                                              ");
-                Console.WriteLine("");
-                Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-            }
+                    if (numeroA + numeroB < numeroC)
+                    {
+                        resultado = true;
+                    }
+                    else
+                    {
+                        resultado = false;
+                    }
+                    break;
+                }
+                #endregion
+
+                #region Saída de Dados
+                if (resultado == true)
+                {
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                    Console.WriteLine("");
+                    Console.WriteLine($"                                         A Soma é Menor Que o Número C!                                                ");
+                    Console.WriteLine("");
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                }
+                else if (resultado == false)
+                {
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                    Console.WriteLine("");
+                    Console.WriteLine($"                                       A Soma Não é Menor Que o Número C!                                              ");
+                    Console.WriteLine("");
+                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+                }
             #endregion
 
             Console.ReadLine();
-
         }
     }
 }
